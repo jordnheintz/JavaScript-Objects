@@ -9,20 +9,29 @@
   - [Objectives](#objectives)
   - [About](#about)
     - [Objects](#objects)
-      - [Object Syntax/Example](#object-syntaxexample)
+    - [Instructor Explains/Demonstrates](#instructor-explainsdemonstrates)
       - [Object Properties](#object-properties)
-      - [Accessing Object Properties](#accessing-object-properties)
+      - [Junior Devs Demonstrate](#junior-devs-demonstrate)
+    - [Accessing Object Properties](#accessing-object-properties)
+      - [Instructor Explains/Demonstrates](#instructor-explainsdemonstrates-1)
+      - [Junior Devs Demonstrate](#junior-devs-demonstrate-1)
     - [Create Instance/Add/Update/Delete Object](#create-instanceaddupdatedelete-object)
+    - [Instructor Explains/Demonstrates](#instructor-explainsdemonstrates-2)
       - [Create new instance](#create-new-instance)
       - [Update an Object](#update-an-object)
       - [Add a property](#add-a-property)
       - [Delete From Object](#delete-from-object)
-      - [Iterating through an object](#iterating-through-an-object)
+      - [Junior Devs Demonstrate](#junior-devs-demonstrate-2)
+    - [Iterating through an object](#iterating-through-an-object)
+    - [Instructor Explains/Demonstrates](#instructor-explainsdemonstrates-3)
       - [Nested Object](#nested-object)
+      - [Junior Devs Demonstrate](#junior-devs-demonstrate-3)
     - [Object Methods](#object-methods)
+    - [Instructor Explains/Demonstrates](#instructor-explainsdemonstrates-4)
         - [`This` keyword](#this-keyword)
         - [Accessing Object Methods](#accessing-object-methods)
         - [Adding a method](#adding-a-method)
+      - [Junior Devs Demonstrate](#junior-devs-demonstrate-4)
   - [Next Steps](#next-steps)
 
 ## Objectives
@@ -38,7 +47,7 @@ In this unit you learned about objects, what they are, and how to create them. T
 
 An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method. Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. The concept of objects in JavaScript can be understood with real life, tangible objects. In JavaScript, an object is a standalone entity, with properties and type.
 
-#### Object Syntax/Example
+### Instructor Explains/Demonstrates
 
 You can create an object in three ways:
 
@@ -84,15 +93,21 @@ console.log(John);
 
 #### Object Properties
 
-The **key:value** pairs in JavaScript objects are called properties:
+The `key:value` pairs in JavaScript objects are called properties:
 | Property/Key| Value |
 | ----------- | ----------- |
-| firstName | Raymond |
-| lastName | Nwambuonwo |
-| age | 28 |
+| firstName | John |
+| lastName | Doe |
+| age | 23 |
 | job | Software Developer |
 
-#### Accessing Object Properties
+#### Junior Devs Demonstrate
+
+Create 3 `car` objects, using the three methods explained above.
+
+### Accessing Object Properties
+
+#### Instructor Explains/Demonstrates
 
 You can access object properties in two ways, bracket or dot notation:
 
@@ -108,7 +123,13 @@ console.log(dev.lastName);
 console.log(dev["firstName"]);
 ```
 
+#### Junior Devs Demonstrate
+
+Access the object you just created using both bracket and dot notation.
+
 ### Create Instance/Add/Update/Delete Object
+
+### Instructor Explains/Demonstrates
 
 #### Create new instance
 
@@ -146,9 +167,15 @@ Using the `delete` keyword will delete an object property entirely. This deletes
 delete dev.age;
 ```
 
-#### Iterating through an object
+#### Junior Devs Demonstrate
 
-In order to iterate through an object, you can use a loop. Using a `for in` loop we can iterate through the object and print out the object's keys to the console.
+Create a new instance of the object you made, update two of its properties, add a property, and delete a property.
+
+### Iterating through an object
+
+### Instructor Explains/Demonstrates
+
+In order to iterate through an object, you can use a loop. Using a `for in` loop we can iterate through the object and print out the object's properties to the console.
 
 ```js
 for (key in dev) {
@@ -162,8 +189,8 @@ Object properties aren't limited to nest collections inside of an object.
 
 ```js
 let dev = {
-  firstName: "Raymond",
-  lastName: "Nwambuonwo",
+  firstName: "John",
+  lastName: "Doe",
   age: 28,
   location: {
     County: "Prince Georges",
@@ -181,7 +208,13 @@ let dev = {
 console.log(dev);
 ```
 
+#### Junior Devs Demonstrate
+
+Create a nested object and make `for...in` loop to iterate over it and print its properties to the console.
+
 ### Object Methods
+
+### Instructor Explains/Demonstrates
 
 JavaScript methods are actions that can be performed on objects. Methods are functions stored as object properties.
 
@@ -223,6 +256,10 @@ person.name = function () {
   return this.firstName + " " + this.lastName;
 };
 ```
+
+#### Junior Devs Demonstrate
+
+Create a method within the object you have been working with and call it to the console.
 
 ## Next Steps
 
